@@ -5,7 +5,7 @@ function Random() {
     const {gif,loading,fetchData}=useGif()
     return (
        <>
-       <div className="flex flex-col items-center w-1/2 bg-green-500 border border-white rounded-lg gap-y-5">
+       <div className="flex flex-col items-center w-1/2 bg-green-500 border border-white rounded-lg sm:min-w-[380px] gap-y-5">
         <h1 className="text-3xl font-bold uppercase mt-[0.5rem] sm:text-2xl">A Random Gif</h1>
         {
             loading?(<Spinner/>):( <img src={gif}  width="450" alt="gif" className="rounded-lg"/>)

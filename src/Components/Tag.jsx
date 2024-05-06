@@ -10,7 +10,7 @@ function Tag() {
     }
     return (
         <>
-        <div className="flex flex-col items-center w-1/2 bg-blue-500 border border-white rounded-lg gap-y-5">
+        <div className="flex flex-col items-center w-1/2 bg-blue-500 border border-white rounded-lg gap-y-5 sm:min-w-[380px]">
          <h1 className="text-3xl font-bold uppercase mt-[0.5rem]">Search  Gif</h1>
          {
              loading?(<Spinner/>):( <img src={gif}  width="450" alt="gif" className="rounded-lg"/>)
